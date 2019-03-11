@@ -14,7 +14,7 @@ def max_heap(list, index):
         max_heap(list,large)
 def heapBuld(list):
     last=len(list)//2
-    for i in range(0,last):
+    for i in range(0,last):            #also you can write "for i in range(last-1,-1,-1):"  insist of "for i in range(0,last):
         max_heap(list,i)
     return list
 
