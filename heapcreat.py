@@ -5,7 +5,7 @@ def max_heap(list, index):
         large=left
     else:
         large=index
-    if right<=len(list) and list[right]>list[index]:
+    if right<=len(list) and list[right]>list[large]:            #there is a bug insteas of index i have to put large
         large=right
     if large!=index:
         key=list[index]
