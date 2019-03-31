@@ -1,7 +1,7 @@
 def heap_short(array,index):
     left=2*index+1
     right=2*index+2
-    large=index
+    large=index                             #initali index is the largest number
     if left<=len(array) and right<=len(array):
         if array[left]>array[index]:
             large=left
